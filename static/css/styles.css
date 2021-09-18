@@ -1,0 +1,382 @@
+/* Whole HTML  */
+html {
+  line-height: 2;
+}
+
+body {
+  color: #dedede;
+  padding-top: 3.5rem;
+  font-size: 30px;
+}
+.parallax {
+  /* The image used */
+  background-image: url("/static/img/pythonbg.jpg");
+
+  /* Set a specific height */
+  min-height: 500px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+ /* Turn off parallax scrolling for all tablets and phones. Increase/decrease the pixels if needed */
+@media only screen and (max-device-width: 1366px) {
+  .parallax {
+    background-attachment: scroll;
+  }
+}
+
+.div-bg-black {
+  background-color: rgba(0, 0, 0, 0.24);
+
+}
+
+.col-4-cont-bg {
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 5%;
+}
+ /*Header page css */
+
+.navbar-site-logo {
+  height: 40px;
+  margin-right: 10px;
+}
+
+.navbar-brand {
+  font-size: 30px;
+  font-weight: bolder;
+}
+
+.navbar-nav {
+  font-size: 20px;
+}
+
+/* home page css*/
+
+header {
+  height: 95vh;
+}
+header.masthead {
+
+  background: no-repeat center center;
+  background-color: #868e96;
+  background-attachment: scroll;
+  position: relative;
+  background-size: cover;
+}
+
+header.masthead .header-photo {
+  border-radius: 20%;
+}
+
+header.masthead .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(33, 37, 41, 0.43);
+  opacity: 0.5;
+}
+
+header.masthead .page-heading,
+header.masthead .post-heading,
+header.masthead .site-heading {
+  padding: 200px 0 150px;
+  color: rgb(255, 255, 255);
+}
+
+@media only screen and (min-width: 768px) {
+  header.masthead .page-heading,
+  header.masthead .post-heading,
+  header.masthead .site-heading {
+    padding: 200px 0;
+  }
+}
+
+header.masthead .page-heading,
+header.masthead .site-heading {
+  text-align: start;
+}
+
+header.masthead .page-heading h1,
+header.masthead .site-heading h1 {
+  font-size: 77px;
+  margin-top: 0;
+}
+
+header.masthead .page-heading .subheading,
+header.masthead .site-heading .subheading {
+  font-size: 35px;
+  font-weight: 300;
+  line-height: 1.1;
+  display: block;
+  margin: 10px 0 0;
+  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+@media only screen and (min-width: 768px) {
+  header.masthead .page-heading h1,
+  header.masthead .site-heading h1 {
+    font-size: 80px;
+  }
+}
+
+header.masthead .post-heading h1 {
+  font-size: 35px;
+}
+
+header.masthead .post-heading .meta,
+header.masthead .post-heading .subheading {
+  line-height: 1.1;
+  display: block;
+}
+
+header.masthead .post-heading .subheading {
+  font-size: 24px;
+  font-weight: 600;
+  margin: 10px 0 30px;
+  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+header.masthead .post-heading .meta {
+  font-size: 20px;
+  font-weight: 300;
+  font-style: italic;
+  font-family: 'Lora', 'Times New Roman', serif;
+}
+
+header.masthead .post-heading .meta a {
+  color: #fff;
+}
+
+@media only screen and (min-width: 768px) {
+  header.masthead .post-heading h1 {
+    font-size: 55px;
+  }
+  header.masthead .post-heading .subheading {
+    font-size: 30px;
+  }
+}
+
+.header-row {
+  margin-top: 15%;
+}
+
+/* home page css*/
+/* About me*/
+section.about-me-section .about-me-cont h3 {
+  text-align: center;
+  font-size: 40px;
+  font-weight: bolder;
+  padding-bottom: 3%;
+}
+
+.about-me-cont {
+  background-color: rgba(0, 0, 0, 0.24);
+  padding: 5% 15%;
+  margin-top: 0;
+}
+
+.about-me-col {
+  border-radius: 5%;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+
+
+/* home page css*/
+/* My skills*/
+section.my-skills-section h3 {
+  text-align: center;
+}
+
+section.my-skills-section .skills-icon {
+  text-align: center;
+}
+
+.my-skills-cont {
+  background-color: rgba(0, 0, 0, 0.24);
+  padding: 5% 1%;
+  font-size: 28px;
+}
+
+.skills-col {
+  border-color: #0062cc;
+  border-style: groove;
+  border-width: thin;
+  border-radius: 5%;
+  background-color: rgba(0, 0, 0, 0.4);
+  min-width: 260px;
+}
+
+/* home page css*/
+/* My carousel*/
+@media only screen and (min-width: 1366px){
+  section.my-carousel-slider {
+    padding-bottom: 5%;
+  }
+}
+
+/*.my-carousel-cont {*/
+/*  max-height: 500px;*/
+/*}*/
+
+section.my-carousel-slider {
+  padding-bottom: 2%;
+  background-color: rgba(0, 0, 0, 0.24);
+
+}
+
+.carousel-caption {
+  border-radius: 5%;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+/* home page css*/
+/* Call to action*/
+@media only screen and (min-width: 1366px){
+  section.call-to-action-section {
+    padding-top: 2%;
+  }
+}
+
+section.call-to-action-section {
+  background-color: rgba(0, 0, 0, 0.24);
+  padding-top: 2%;
+}
+
+section.call-to-action-section .call-to-action-cont h3 {
+  text-align: center;
+  font-size: 40px;
+  font-weight: bolder;
+  padding-bottom: 3%;
+}
+
+.call-to-action-col {
+  border-radius: 5%;
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 30px;
+}
+
+.call-to-action-cont {
+  padding: 5% 10%;
+}
+
+.cta-btns {
+  text-align: center;
+}
+
+/* Footer page css */
+
+.copyright {
+  text-align: center;
+}
+
+.footer-section {
+  background-color: black;
+  padding: 10% 5%;
+
+}
+
+.footer-cont {
+  height: 100%;
+  background-color: black;
+  color: white;
+}
+
+/* ABOUT page css */
+.about-me-col {
+  padding: 3% 3%;
+}
+
+.about-page-p-cont {
+  padding: 7% 0;
+}
+
+.about-page-p-img {
+  min-width: 320px;
+  width: 40%;
+}
+
+.img-left-float {
+  float: left;
+  padding-right: 10px;
+}
+
+.img-right-float {
+  float: right;
+  padding-left: 10px;
+}
+
+
+
+/* CONTACT page css */
+
+.contact-me-section{
+  background-color: rgba(0, 0, 0, 0.24);
+  padding-top: 3%;
+  padding-bottom: 5%;
+}
+
+.contact-me-cont {
+
+}
+
+.contact-me-col {
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.contact-p {
+  padding: 3% 10%;
+}
+
+/* BLOG page css */
+blog-bg-black {
+  background-color: rgba(0, 0, 0, 0.63);
+
+}
+
+.blog-posts-padding {
+  padding: 5% 0;
+}
+
+.blog-masthead {
+  height: 50vh;
+}
+/* REGISTER page css */
+.reg-form {
+  border-radius: 5%;
+  margin: 10% 5%;
+  padding: 3% 3%;
+}
+/* LOGIN page css */
+.log-form {
+  border-radius: 5%;
+  margin: 10% 5%;
+  padding: 3% 3%;
+}
+/* MAKE A POST page css */
+/* POST page css */
+.post-creds {
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.post-div {
+  padding-bottom: 50px;
+}
+
+.post-header-bg {
+  border-radius: 10%;
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 3%;
+}
+
+.post-form{
+  border-radius: 5%;
+  margin: 10% 5%;
+  padding: 3% 3%;
+}

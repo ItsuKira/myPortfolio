@@ -1,0 +1,60 @@
+{% include "header.html" %}
+
+<!-- Page Header -->
+<header class="masthead" style="background-image: url({{ url_for('static', filename='img/codebg.jpg') }})">
+    <div class="overlay"></div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-8 col-md-10 mx-auto">
+                <div class="page-heading">
+                    <div class="row header-row">
+                        <div class="col header-left-col">
+                            <h1>About me</h1>
+                            <span class="subheading">This is what i do</span>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- Main Content -->
+<section class="about-me-section" id="">
+    <div class="container-fluid about-me-cont">
+        <div class="row">
+            <div class="col-lg-12 col-md-10 mx-auto col about-me-col">
+
+                <h3>Lorem Ipsum</h3>
+                <div class="about-page-p-cont">
+                    <p><img class="about-page-p-img img-left-float"
+                            src="{{ url_for('static', filename='img/about-page-pic1.jpg') }}">Lorem ipsum dolor sit
+                        amet, consectetur adipisicing elit. Saepe nostrum ullam eveniet pariatur voluptates
+                        odit, fuga atque ea nobis sit soluta odio, adipisci quas excepturi maxime quae totam ducimus
+                        consectetur?</p>
+                </div>
+                <div class="about-page-p-cont">
+                    <p><img class="about-page-p-img img-right-float"
+                            src="{{ url_for('static', filename='img/about-page-pic2.jpg') }}">Lorem ipsum dolor sit
+                        amet, consectetur adipisicing elit. Eius praesentium recusandae illo eaque
+                        architecto error, repellendus iusto reprehenderit, doloribus, minus sunt. Numquam at quae
+                        voluptatum in
+                        officia voluptas voluptatibus, minus!</p>
+                </div>
+                <div class="about-page-p-cont">
+                    <p><img class="about-page-p-img img-left-float"
+                            src="{{ url_for('static', filename='img/about-page-pic3.jpg') }}">Lorem ipsum dolor sit
+                        amet, consectetur adipisicing elit. Aut consequuntur magnam, excepturi aliquid ex
+                        itaque esse est vero natus quae optio aperiam soluta voluptatibus corporis atque iste neque sit
+                        tempora!</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<hr>
+
+{% include "footer.html" %}
