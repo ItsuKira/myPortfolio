@@ -15,7 +15,7 @@ import os
 import gunicorn
 
 
-MY_EMAIL = "itsusapptestemail@gmail.com"
+MY_EMAIL = "kyryltim@gmail.com"
 MY_PASSWORD = os.environ.get("MY_PASSWORD")
 
 app = Flask(__name__)
