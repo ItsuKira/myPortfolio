@@ -26,7 +26,7 @@
     <div class="container div-bg-black">
         <div class="row">
             <div class="col-lg-10 mx-auto col-4-cont-bg post-form">
-                {{ ckeditor.load() }}
+                {{ ckeditor.load(pkg_type="full") }}
                 {{ ckeditor.config(name='body') }}
                 {{ wtf.quick_form(form, novalidate=True, button_map={"submit": "dark"}) }}
             </div>

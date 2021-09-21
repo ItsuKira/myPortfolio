@@ -121,15 +121,16 @@ def contact():
     form=ContactForm()
     if request.method == 'POST':
         with smtplib.SMTP("smtp.gmail.com") as connection:
+            message = f"Subject:Itsu's blog contact form\n\nName: {request.form['name']}\n" \
+                      f"E-mail: {request.form['email']}\n" \
+                      f"Phone: {request.form['phone']}\n" \
+                      f"Message: {request.form['message']}"
             connection.starttls()
             connection.login(user=MY_EMAIL, password=MY_PASSWORD)
             connection.sendmail(
                 from_addr=MY_EMAIL,
                 to_addrs=MY_EMAIL,
-                msg=f"Subject:Itsu's blog contact form\n\nName: {request.form['name']}\n"
-                    f"E-mail: {request.form['email']}\n"
-                    f"Phone: {request.form['phone']}\n"
-                    f"Message: {request.form['message']}"
+                msg=message.encode('utf8')
             )
         return render_template("contact.html", msg_sent=True, form=form)
     return render_template("contact.html", logged_in=current_user.is_authenticated, form=form)

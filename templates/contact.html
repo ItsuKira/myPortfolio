@@ -36,8 +36,8 @@
                 <div class="container div-bg-black">
                     <div class="row">
                         <div class="col-lg-10 mx-auto">
-                            {{ ckeditor.load() }}
-                            {{ ckeditor.config(name='body') }}
+                            {{ ckeditor.load(pkg_type="full") }}
+                            {{ ckeditor.config(name='message') }}
                             {{ wtf.quick_form(form, novalidate=True, button_map={"submit": "light"}) }}
                         </div>
                     </div>
