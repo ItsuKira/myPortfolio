@@ -17,9 +17,9 @@
 </header>
 
 <!-- Main Content -->
-<div class="container col-4-cont-bg">
+<div class="container col-4-cont-bg div-bg-black">
     <div class="row blog-posts-padding">
-        <div class="col-lg-8 col-md-10 mx-auto">
+        <div class="col-lg-8 col-md-10 mx-auto blog-bg-black">
             {% for post in all_posts %}
                 <div class="post-preview">
                     <a class="link-warning" href="{{ url_for('show_post', post_id=post.id) }}">
