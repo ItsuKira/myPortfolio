@@ -404,7 +404,7 @@ section.call-to-action-section .call-to-action-cont h3 {
 }
 
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1024px) {
   header.masthead .page-heading,
   header.masthead .post-heading,
   header.masthead .site-heading {
@@ -422,7 +422,7 @@ section.call-to-action-section .call-to-action-cont h3 {
   }
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 768px) {
   .about-page-p-img {
     width: 30%;
   }
