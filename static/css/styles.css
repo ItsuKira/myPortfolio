@@ -426,6 +426,9 @@ section.call-to-action-section .call-to-action-cont h3 {
   .about-page-p-img {
     width: 30%;
   }
+  .cta-btns{
+    padding: 5px 0;
+  }
   .home-page-p-img {
     width: 100%;
   }
