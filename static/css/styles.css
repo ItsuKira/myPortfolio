@@ -438,4 +438,7 @@ section.call-to-action-section .call-to-action-cont h3 {
     padding: 300px 0 50px;
     color: rgb(255, 255, 255);
   }
+  .skills-icon {
+    padding-bottom: 10px;
+  }
 }

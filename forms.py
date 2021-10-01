@@ -24,12 +24,12 @@ class LoginForm(FlaskForm):
     submit = SubmitField("Log Me In!")
 
 class CommentForm(FlaskForm):
-    comment = CKEditorField ("Comment", validators=[DataRequired()])
+    comment = TextAreaField ("Comment", validators=[DataRequired()])
     submit = SubmitField("Comment!")
 
 class ContactForm(FlaskForm):
     name = StringField("Name", validators=[DataRequired()])
     email = StringField("Email", validators=[DataRequired()])
     phone = StringField("Phone", validators=[])
-    message = CKEditorField("Message", validators=[DataRequired()])
+    message = TextAreaField("Message", validators=[DataRequired()])
     submit = SubmitField("Contact Me!")
